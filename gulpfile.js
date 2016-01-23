@@ -73,14 +73,6 @@ gulp.task("clean:scripts", function () {
     return del(paths.scripts);
 });
 
-gulp.task("scripts:html5shiv-printshiv", ["clean:scripts"], function () {
-    return gulp.src("./bower_components/html5shiv/dist/html5shiv-printshiv.js")
-        .pipe(gulp.dest(paths.scripts))
-        .pipe(uglify())
-        .pipe(rename("html5shiv-printshiv.min.js"))
-        .pipe(gulp.dest(paths.scripts));
-});
-
 gulp.task("scripts:jquery", ["clean:scripts"], function () {
     return gulp.src("./bower_components/jquery/dist/jquery.js")
         .pipe(gulp.dest(paths.scripts))
@@ -88,6 +80,15 @@ gulp.task("scripts:jquery", ["clean:scripts"], function () {
         .pipe(rename("jquery.min.js"))
         .pipe(gulp.dest(paths.scripts));
 });
+
+gulp.task("scripts:materialize", ["clean:scripts"], function () {
+    return gulp.src("./bower_components/materialize/bin/materialize.js")
+        .pipe(gulp.dest(paths.scripts))
+        .pipe(uglify())
+        .pipe(rename("bootstrap.min.js"))
+        .pipe(gulp.dest(paths.scripts));
+});
+
 
 gulp.task("scripts:bootstrap", ["clean:scripts"], function () {
     return gulp.src("./bower_components/bootstrap-sass/assets/javascripts/bootstrap.js")
@@ -105,30 +106,19 @@ gulp.task("scripts:skrollr", ["clean:scripts"], function () {
         .pipe(gulp.dest(paths.scripts));
 });
 
-gulp.task("scripts:loadCSS", ["clean:scripts"], function () {
-    return gulp.src(["./Scripts/loadCSS.js", "./Scripts/onloadCSS.js"])
-        .pipe(concat("loadCSS.js"))
+gulp.task("scripts:slick", ["clean:scripts"], function () {
+    return gulp.src("./bower_components/slick-carousel/slick/slick.js")
         .pipe(gulp.dest(paths.scripts))
         .pipe(uglify())
-        .pipe(rename("loadCSS.min.js"))
+        .pipe(rename("slick.min.js"))
         .pipe(gulp.dest(paths.scripts));
 });
 
-gulp.task("scripts:modernizr", ["clean:scripts"], function () {
-    return gulp.src("./Scripts/Modernizr.js")
-        .pipe(rename("modernizr.js"))
+gulp.task("scripts:hackgallery-slick", ["clean:scripts"], function () {
+    return gulp.src("./Scripts/hackgallery-slick.js")
         .pipe(gulp.dest(paths.scripts))
         .pipe(uglify())
-        .pipe(rename("modernizr.min.js"))
-        .pipe(gulp.dest(paths.scripts));
-});
-
-gulp.task("scripts:respond", ["clean:scripts"], function () {
-    return gulp.src("./bower_components/respond/dest/respond.src.js")
-        .pipe(rename("respond.js"))
-        .pipe(gulp.dest(paths.scripts))
-        .pipe(uglify())
-        .pipe(rename("respond.min.js"))
+        .pipe(rename("hackgallery-slick.min.js"))
         .pipe(gulp.dest(paths.scripts));
 });
 
@@ -154,13 +144,12 @@ gulp.task("scripts:application", ["clean:scripts"], function () {
 });
 
 gulp.task("scripts", [
-    "scripts:html5shiv-printshiv",
     "scripts:jquery",
     "scripts:bootstrap",
+    "scripts:materialize",
     "scripts:skrollr",
-    "scripts:loadCSS",
-    "scripts:modernizr",
-    "scripts:respond",
+    "scripts:slick",
+    "scripts:hackgallery-slick",
     "scripts:application"
 ]);
 

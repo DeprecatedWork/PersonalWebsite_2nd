@@ -2,10 +2,11 @@
   "name": "ASP.NET",
   "private": true,
   "dependencies": {
-    "jquery": "2.2.0",
-    "skrollr": "0.6.30",
     "bootstrap": "3.3.6",
     "bootstrap-sass": "3.3.6",
-    "font-awesome": "4.5.0"
+    "font-awesome": "4.5.0",
+    "jquery": "2.2.0",
+    "materialize": "0.97.5",
+    "skrollr": "0.6.30"
   }
 }

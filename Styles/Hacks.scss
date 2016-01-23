@@ -1,4 +1,9 @@
-﻿.hacksbackground{
+﻿ul
+{
+    list-style-type: none;
+}
+
+.hacksbackground{
     background: none;
     background-color: #010101;
     height: 310px;
@@ -12,6 +17,7 @@
 	overflow: hidden;
 	position: relative;
 }
+
 .hackscontent{
     max-width: 450px;
 	margin: -150px auto 0 auto;
@@ -21,12 +27,30 @@
 	text-align: center
 }
 
+.collapsible-header{
+    display: block;
+    cursor: pointer;
+    min-height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.collapsible-body {
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    margin: 0px 0px 0px 0px;
+    background-color: #fff;
+}
+
 .page-header{
     padding-top:20px;
     padding-bottom:40px;
 }
 p{
     font-size: 16px;
+    margin: 0px 0px 0px 0px;
 }
 
 @media(max-width: 600px){
