@@ -54,13 +54,35 @@ h2{
     padding-bottom: 500px;
     }
 }
-@media(max-width: 600px){
+
+}
+@media(max-width: 800px){
     h1{
         font-size:40px;
         font-family:Calibri;
     }
     .homename {
     padding-bottom: 700px;
+    }
+    #home .homebackground{
+        background-position: -150px;
+    background-image: url(../../Images/HomepageBackgroundSm.jpg);
+    height: 1038px;
+    }
+}
+
+@media(max-width: 600px){
+    h1{
+        font-size:40px;
+        font-family:Calibri;
+    }
+    .homename {
+        padding-bottom: 400px;
+    }
+    #home .homebackground{
+        background-position: 20% 0px;
+        background-image: url(../../Images/HomepageBackground.jpg);
+        height: 700px;
     }
 }
 @media(max-width: 360px){
@@ -69,12 +91,21 @@ h2{
         font-family:Calibri;
     }
     .homename {
-    padding-bottom: 700px;
+        padding-bottom: 400px;
+    }
+    #home .homebackground{
+        background-position: 20% 0px;
+        background-image: url(../../Images/HomepageBackgroundSm.jpg);
+        height: 700px;
     }
 }
 @media(max-width: 320px){
     .homename {
-    padding-bottom: 800px;
+    padding-bottom: 400px;
     }
-}
+    #home .homebackground{
+        background-position: 20% 0px;
+        background-image: url(../../Images/HomepageBackgroundSm.jpg);
+        height: 700px;
+    }
 }

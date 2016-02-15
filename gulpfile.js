@@ -37,20 +37,6 @@ gulp.task("images", ["clean:images"], function () {
         .pipe(gulp.dest(paths.images));
 });
 
-// Icons
-gulp.task("clean:icons", function () {
-    return del([
-        paths.icons + "*icon*",
-        paths.icons + "browserconfig.xml",
-        paths.icons + "manifest.json",
-    ]);
-});
-
-gulp.task("icons", ["clean:icons"], function () {
-    return gulp.src("./Icons/*.*")
-        .pipe(gulp.dest(paths.icons));
-});
-
 // Fonts
 gulp.task("clean:fonts", function () {
     return del(paths.fonts);
@@ -106,22 +92,6 @@ gulp.task("scripts:skrollr", ["clean:scripts"], function () {
         .pipe(gulp.dest(paths.scripts));
 });
 
-gulp.task("scripts:slick", ["clean:scripts"], function () {
-    return gulp.src("./bower_components/slick-carousel/slick/slick.js")
-        .pipe(gulp.dest(paths.scripts))
-        .pipe(uglify())
-        .pipe(rename("slick.min.js"))
-        .pipe(gulp.dest(paths.scripts));
-});
-
-gulp.task("scripts:hackgallery-slick", ["clean:scripts"], function () {
-    return gulp.src("./Scripts/hackgallery-slick.js")
-        .pipe(gulp.dest(paths.scripts))
-        .pipe(uglify())
-        .pipe(rename("hackgallery-slick.min.js"))
-        .pipe(gulp.dest(paths.scripts));
-});
-
 gulp.task("scripts:application", ["clean:scripts"], function () {
     var javascripts = gulp.src([
         "./Scripts/**/*.js",
@@ -148,8 +118,6 @@ gulp.task("scripts", [
     "scripts:bootstrap",
     "scripts:materialize",
     "scripts:skrollr",
-    "scripts:slick",
-    "scripts:hackgallery-slick",
     "scripts:application"
 ]);
 
@@ -215,8 +183,21 @@ gulp.task("webConfig", ["clean:webConfig"], function () {
         .pipe(gulp.dest(paths.webConfig));
 });
 
+gulp.task('min', function () {
+    gulp.src('./scripts')
+       .pipe(uglify())
+       .pipe(gulp.dest('build'))
+});
+
+gulp.task("clean", ["clean:images",
+                    "clean:fonts",
+                    "clean:scripts",
+                    "clean:styles",
+                    "clean:robots",
+                    "clean:sitemap",
+                    "clean:webConfig"]);
+
 gulp.task("default", [
-    "icons",
     "images",
     "fonts",
     "scripts",

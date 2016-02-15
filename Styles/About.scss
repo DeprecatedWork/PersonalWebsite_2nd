@@ -1,6 +1,6 @@
 ﻿.aboutbackground{
     background: none;
-    background-color: #010101;
+    background-color: white;
     height: 310px;
     text-align: center
 }
@@ -32,8 +32,16 @@ p{
 @media(max-width: 600px){
     .aboutbackground{
     background: none;
-    background-color: #010101;
+    background-color: white;
     height: 410px;
     text-align: center
+    }
 }
+@media(max-width: 800px){
+    .aboutbackground{
+    background: none;
+    background-color: white;
+    height: 510px;
+    text-align: center
+    }
 }

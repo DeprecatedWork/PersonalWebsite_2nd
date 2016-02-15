@@ -19,12 +19,10 @@
 }
 
 .hackscontent{
-    max-width: 450px;
 	margin: -150px auto 0 auto;
 	display: table-cell;
 	color: #010101;
 	padding: 0 8%;
-	text-align: center
 }
 
 .collapsible-header{
@@ -35,13 +33,17 @@
     padding: 0 1rem;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
 }
 
 .collapsible-body {
     border-bottom: 1px solid #ddd;
     box-sizing: border-box;
-    margin: 0px 0px 0px 0px;
     background-color: #fff;
+    padding: 40px 40px 40px 40px;
+    text-align: justify;
 }
 
 .page-header{

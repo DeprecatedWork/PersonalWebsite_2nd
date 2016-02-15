@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
 
-    <title>Sequensis</title>
+    <title>JessWhite</title>
+
+    <link href="~/images/BWJess.jpg" rel="stylesheet">
+    <link href="~/images/BWJessSm.jpg" rel="stylesheet">
+    <link href="~/images/HomepageBackground.jpg" rel="stylesheet">
+    <link href="~/images/HomepageBackgroundSm.jpg" rel="stylesheet">
+    <link href="~/scripts/bootstrap.min.js" rel="stylesheet">
+    <link href="~/scripts/jquery.min.js" rel="stylesheet">
+    <link href="~/scripts/materialize.js" rel="stylesheet">
+    <link href="~/scripts/skrollr.min.js" rel="stylesheet">
     <link href="~/styles/application.min.css" rel="stylesheet">
     <link href="~/styles/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -91,12 +100,17 @@
  </section>
 
     <section id="about">
-        <div class="aboutbackground" data-0="background-color:rgb(240,255,240);" data-top="background-color:rgb(96,96,96);" data-anchor-target="#about">
+        <div class="aboutbackground">
             <div class="aboutcontainer">
                 <div class="aboutcontent">
                     <h2 class="text-center page-header" data--200-bottom="opacity: 0.5" data-center="opacity: 1" data-206-top="opacity:0.5" data-106-top="opacity: 0.25" data-anchor-target="#about h2">ABOUT</h2>
                     <p data--200-bottom="opacity: 0.5" data-center="opacity: 1" data-206-top="opacity: 0.5" data-106-top="opacity: 0.25" data-anchor-target="#about p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        Having graduated in October 2015 from a MSc in Computer Science conversion course, I am currently working as a Software Developer in Nottingham.
+                    <br />
+                        Previous to this I completed a BSc in Psychology and an MSc in NeuroScience and Neuroimaging.
+                  <br />
+                        Relatively new to this industry, I try to learn from others, both at work and by going to Hacks and meetups. Outside of development I enjoy climbing, games (computer and tabletop) reading
+                        watching anime, going to concerts and general nerdery.  
                     </p>
                 </div>
             </div>
@@ -109,48 +123,61 @@
     </section>
 
     <section id="hacks">
-        <div class="hacksbackground" data-0="background-color:rgb(96,96,96);" data-top="background-color:rgb(250,255,250);" data-anchor-target="#hacks">
+        <div class="hacksbackground" data-0="background-color:rgb(255,255,255);" data-top="background-color:rgb(255,255,255);" data-anchor-target="#hacks">
             <div class="hackscontainer">
                 <div class="hackscontent">
                     <h2 class="text-center page-header" data--200-bottom="opacity: 0.5" data-center="opacity: 1" data-206-top="opacity:0.5" data-106-top="opacity: 0.25" data-anchor-target="#about h2">HACKS</h2>
                     <ul class="collapsible popout" data-collapsible="accordion">
                         <li>
                             <div class="collapsible-header">BRUM HACK 2.0 (2014)</div>
-                            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                            <div class="collapsible-body"><p>BrumHack 2.0 was a student hackathon based at The University of Birmingham. For this hack, 
+                                I was part of a two man team retained data from the .gov websites on salaries of different professions across the UK for men and women. 
+                                We then attempted to display this data on Google Maps to show the difference in pay between men and women. </p></div>
                         </li>
                         <li>
                             <div class="collapsible-header">HACK24 (2015)</div>
                             <div class="collapsible-body"><p>Two strangers and I joined on the day to form the team Jodi and The Jess'.
-                                 We entered the MidlandHR Challenge to create a website where employees could rate their managers and users could 
-                                retrieve information about company fit, gender ratio etc. We formed a website connected to a SQL database. This was my 
-                                first experience of PHP and I also used some
-                                 JS for graphical representations of the data. Though we did not win, it was a valueable learning experience.</p></div>
+                                We entered the MidlandHR Challenge to create a website where employees could rate their managers and users could 
+                                retrieve information about company fit, gender ratio etc.</p></div>
                         </li>
                         <li>
                             <div class="collapsible-header">HACK MANCHESTER (2015)</div>
-                            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header">HACK 24 (2016)</div>
-                            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                            <div class="collapsible-body">
+                                <p>
+                                     I entered as the one person team CodePadawan (yes I like Star Wars.. ) in the aim to learn about MVC. I had never produced anything with 
+                                    MVC or ASP. In fact I hadn't even really touched Razor; but I figured this was the best way to get a crash course.
+                                    <br /><br />
+                                    </p><p>
+                                    The idea was pretty simple, but came from a problem I recognised through my trials and tribs. I have Crohns disease.
+                                    Myself, and a few I know, have been in the state where either they have prepared for a sponsored event and then became ill,
+                                    or have been unable to raise money for the charities that are important for them. I thought wouldn't it be great if there was an easy way to
+                                    find a replacement for your challenge or someone to complete a challenge in your stead? There are loads of people who enjoy doing
+                                    crazy events for no reason.
+                                    <br /><br />
+                                    </p><p>
+                                    I hoped to make a social networking site where people who, due to illness or injury, couldn't partake in voluntary activities could
+                                    connect to people who do such activites for fun and don't want the hassel of raising money and sponsership.
+                                    Predictably, as I was using tech I am not comfortable with, am a new dev (6 weeks into work at this point), and was working alone, my
+                                    product was pretty shoddy. However, I did get recognition for my idea and an honorary mention! (HOW SWEET!) which is amazing
+                                    considering the high quality of entries.
+                                    <br /><br />
+                                    </p><p>
+                                    I loved this hack. I got to hang out with friends, was encouraged by judges and had a very comfy beanbag to get an hours sleep on.
+                                    The food was good, the coffee was better and the SWAG bountiful. There was a lot of support on offer for a new dev and the atmosphere
+                                    was very friendly.
+                                    <br />  <br />
+                                    </p><p>
+                                    <br />
+                                <div class="text-center">
+                                    <a class="btn btn-danger btn-large" href="https://www.youtube.com/embed/YRa64_kNDX8">Video Entry</a>
+                                </div>
+                                </p></li>
+                            <li>
+                                <div class="collapsible-header">HACK 24 (2016)</div>
+                            <div class="collapsible-body"><p>TBD</p></div>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="conferences">
-        <div class="hacksbackground" data-0="background-color:rgb(96,96,96);" data-top="background-color:rgb(250,255,250);" data-anchor-target="#hacks">
-            <div class="hackscontainer">
-                <div class="hackscontent">
-                    <h2 class="text-center page-header" data--200-bottom="opacity: 0.5" data-center="opacity: 1" data-206-top="opacity:0.5" data-106-top="opacity: 0.25" data-anchor-target="#about h2">CONFERENCES</h2>
-                    <ul class="collapsible popout" data-collapsible="accordion">
-                        <li>
-                            <div class="collapsible-header">WOMEN TECH MAKERS (2015)</div>
-                            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                        </li>
-                    </ul>
+                    More to come...
                 </div>
             </div>
         </div>
@@ -160,7 +187,7 @@
     <script src="~/scripts/bootstrap.min.js"></script>
     <script src="~/scripts/materialize.js"></script>
     <script src="~/scripts/skrollr.min.js"></script>
-    <script>var s = skrollr.init();</script>
+    <script>var s = skrollr.init({ forceHeight: false });</script>
 
     <script>
     $("#menu-close").click(function(e) {
