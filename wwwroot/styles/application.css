@@ -3502,7 +3502,7 @@ button.list-group-item-danger {
 html,
 body {
   width: 100%;
-  height: 100%; }
+  height: 2464px; }
 
 body {
   font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif; }
@@ -3684,6 +3684,28 @@ hr.small {
 footer {
   padding: 100px 0; }
 
+ul.social-buttons li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  outline: 0;
+  color: #fff;
+  background-color: #222;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s; }
+
+h1 {
+  font-size: 48px;
+  font-family: Calibri; }
+
+h2 {
+  font-size: 36px;
+  font-family: Calibri; }
+
 .homebackground {
   background-position: center center;
   background-repeat: no-repeat;
@@ -3709,9 +3731,61 @@ footer {
   margin: -150px auto 0 auto;
   display: table-cell;
   vertical-align: middle;
-  color: #ebebeb;
+  color: slategrey;
   padding: 0 8%;
   text-align: center; }
+
+.homename {
+  padding-bottom: 100px; }
+
+@media (max-width: 1680px) {
+  .homename {
+    padding-bottom: 300px; } }
+
+@media (max-width: 1680px) and (max-width: 1280px) {
+  .homename {
+    padding-bottom: 500px; } }
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 40px;
+    font-family: Calibri; }
+  .homename {
+    padding-bottom: 700px; }
+  #home .homebackground {
+    background-position: -150px;
+    background-image: url(../../Images/HomepageBackgroundSm.jpg);
+    height: 1038px; } }
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+    font-family: Calibri; }
+  .homename {
+    padding-bottom: 400px; }
+  #home .homebackground {
+    background-position: 20% 0px;
+    background-image: url(../../Images/HomepageBackground.jpg);
+    height: 700px; } }
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 40px;
+    font-family: Calibri; }
+  .homename {
+    padding-bottom: 400px; }
+  #home .homebackground {
+    background-position: 20% 0px;
+    background-image: url(../../Images/HomepageBackgroundSm.jpg);
+    height: 700px; } }
+
+@media (max-width: 320px) {
+  .homename {
+    padding-bottom: 400px; }
+  #home .homebackground {
+    background-position: 20% 0px;
+    background-image: url(../../Images/HomepageBackgroundSm.jpg);
+    height: 700px; } }
 
 #sidebar-wrapper {
   z-index: 1000;
@@ -3783,3 +3857,130 @@ footer {
 
 .toggle {
   margin: 5px 5px 0 0; }
+
+.aboutbackground {
+  background: none;
+  background-color: white;
+  height: 310px;
+  text-align: center; }
+
+.aboutcontainer {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative; }
+
+.aboutcontent {
+  max-width: 450px;
+  margin: -150px auto 0 auto;
+  display: table-cell;
+  color: #010101;
+  padding: 0 8%;
+  text-align: center; }
+
+.page-header {
+  padding-top: 20px;
+  padding-bottom: 40px; }
+
+p {
+  font-size: 16px; }
+
+@media (max-width: 600px) {
+  .aboutbackground {
+    background: none;
+    background-color: white;
+    height: 410px;
+    text-align: center; } }
+
+@media (max-width: 800px) {
+  .aboutbackground {
+    background: none;
+    background-color: white;
+    height: 510px;
+    text-align: center; } }
+
+.hack24background {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 50%;
+  width: 100%; }
+
+#firstBanner .hack24background {
+  background-image: url(../../Images/BWJess.jpg);
+  height: 738px; }
+
+@media (max-width: 600px) {
+  #firstBanner .hack24background {
+    background-image: url(../../Images/BWJessSm.jpg);
+    background-position: -125px;
+    height: 500px; } }
+
+@media (max-width: 360px) {
+  #firstBanner .hack24background {
+    background-image: url(../../Images/BWJessSm.jpg);
+    background-position: -115px;
+    height: 500px; } }
+
+ul {
+  list-style-type: none; }
+
+.hacksbackground {
+  background: none;
+  background-color: #010101;
+  height: 310px;
+  text-align: center; }
+
+.hackscontainer {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative; }
+
+.hackscontent {
+  margin: -150px auto 0 auto;
+  display: table-cell;
+  color: #010101;
+  padding: 0 8%; }
+
+.collapsible-header {
+  display: block;
+  cursor: pointer;
+  min-height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center; }
+
+.collapsible-body {
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 40px 40px 40px 40px;
+  text-align: justify; }
+
+.page-header {
+  padding-top: 20px;
+  padding-bottom: 40px; }
+
+p {
+  font-size: 16px;
+  margin: 0px 0px 0px 0px; }
+
+@media (max-width: 600px) {
+  .hacksbackground {
+    background: none;
+    background-color: #010101;
+    height: 410px;
+    text-align: center; } }
