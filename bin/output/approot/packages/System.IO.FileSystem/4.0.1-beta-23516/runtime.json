@@ -1,0 +1,19 @@
+{
+  "runtimes": {
+    "win7": {
+      "System.IO.FileSystem": {
+        "runtime.win7.System.IO.FileSystem": "4.0.1-beta-23516"
+      }
+    },
+    "osx.10.10": {
+      "System.IO.FileSystem": {
+        "runtime.osx.10.10.System.IO.FileSystem": "4.0.1-beta-23516"
+      }
+    },
+    "linux": {
+      "System.IO.FileSystem": {
+        "runtime.linux.System.IO.FileSystem": "4.0.1-beta-23516"
+      }
+    }
+  }
+}

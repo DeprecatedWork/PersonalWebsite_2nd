@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata minClientVersion="3.0">
+    <id>System.Data.Common</id>
+    <version>4.0.1-beta-23516</version>
+    <title>System.Data.Common</title>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <authors>Microsoft</authors>
+    <owners>microsoft,dotnetframework</owners>
+    <licenseUrl>http://go.microsoft.com/fwlink/?LinkId=329770</licenseUrl>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</iconUrl>
+    <description>Provides the base abstract classes, including System.Data.DbConnection and System.Data.DbCommand, for all data providers.
+
+Commonly Used Types:
+System.DBNull
+System.Data.Common.DbConnection
+System.Data.Common.DbException
+System.Data.Common.DbParameter
+System.Data.DbType
+System.Data.Common.DbDataReader
+System.Data.Common.DbCommand
+System.Data.Common.DbTransaction
+System.Data.Common.DbParameterCollection
+System.Data.Common.DbProviderFactory
+ - 1548494</description>
+    <copyright>© Microsoft Corporation.  All rights reserved.</copyright>
+    <dependencies>
+      <group targetFramework="MonoAndroid1.0" />
+      <group targetFramework="MonoTouch1.0" />
+      <group targetFramework="Unsupported0.0" />
+      <group targetFramework="Unsupported0.0" />
+      <group targetFramework=".NETPlatform5.1">
+        <dependency id="System.Runtime" version="4.0.0" />
+        <dependency id="System.Threading.Tasks" version="4.0.0" />
+        <dependency id="System.IO" version="4.0.0" />
+      </group>
+      <group targetFramework=".NETPlatform5.4">
+        <dependency id="System.Runtime" version="4.0.20" />
+        <dependency id="System.Resources.ResourceManager" version="4.0.0" />
+        <dependency id="System.Threading.Tasks" version="4.0.0" />
+        <dependency id="System.Text.RegularExpressions" version="4.0.0" />
+        <dependency id="System.Collections.NonGeneric" version="4.0.0" />
+        <dependency id="System.IO" version="4.0.0" />
+        <dependency id="System.Collections" version="4.0.10" />
+        <dependency id="System.Runtime.Extensions" version="4.0.10" />
+        <dependency id="System.Globalization" version="4.0.10" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="mscorlib" targetFramework=".NETFramework4.6" />
+      <frameworkAssembly assemblyName="System.Data" targetFramework=".NETFramework4.6" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

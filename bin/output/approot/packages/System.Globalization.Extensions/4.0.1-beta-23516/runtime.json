@@ -1,0 +1,14 @@
+{
+  "runtimes": {
+    "win7": {
+      "System.Globalization.Extensions": {
+        "runtime.win7.System.Globalization.Extensions": "4.0.1-beta-23516"
+      }
+    },
+    "unix": {
+      "System.Globalization.Extensions": {
+        "runtime.unix.System.Globalization.Extensions": "4.0.1-beta-23516"
+      }
+    }
+  }
+}

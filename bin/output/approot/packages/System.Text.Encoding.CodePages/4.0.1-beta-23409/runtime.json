@@ -1,0 +1,14 @@
+{
+  "runtimes": {
+    "win7": {
+      "System.Text.Encoding.CodePages": {
+        "runtime.win7.System.Text.Encoding.CodePages": "4.0.1-beta-23409"
+      }
+    },
+    "unix": {
+      "System.Text.Encoding.CodePages": {
+        "runtime.unix.System.Text.Encoding.CodePages": "4.0.1-beta-23409"
+      }
+    }
+  }
+}

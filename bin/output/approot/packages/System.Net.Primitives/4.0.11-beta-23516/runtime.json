@@ -1,0 +1,19 @@
+{
+  "runtimes": {
+    "win7": {
+      "System.Net.Primitives": {
+        "runtime.win7.System.Net.Primitives": "4.0.11-beta-23516"
+      }
+    },
+    "osx.10.10": {
+      "System.Net.Primitives": {
+        "runtime.osx.10.10.System.Net.Primitives": "4.0.11-beta-23516"
+      }
+    },
+    "unix": {
+      "System.Net.Primitives": {
+        "runtime.unix.System.Net.Primitives": "4.0.11-beta-23516"
+      }
+    }
+  }
+}

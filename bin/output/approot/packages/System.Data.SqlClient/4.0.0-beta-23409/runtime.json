@@ -1,0 +1,19 @@
+{
+  "runtimes": {
+    "win7": {
+      "System.Data.SqlClient": {
+        "runtime.win7.System.Data.SqlClient": "4.0.0-beta-23409"
+      }
+    },
+    "win7-x64": {
+      "runtime.win7.System.Data.SqlClient": {
+        "runtime.win7-x64.System.Data.SqlClient.sni": "4.0.0-beta-23409"
+      }
+    },
+    "win7-x86": {
+      "runtime.win7.System.Data.SqlClient": {
+        "runtime.win7-x86.System.Data.SqlClient.sni": "4.0.0-beta-23409"
+      }
+    }
+  }
+}

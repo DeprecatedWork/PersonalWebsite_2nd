@@ -1,0 +1,14 @@
+{
+  "runtimes": {
+    "any": {
+      "System.Linq.Expressions": {
+        "runtime.any.System.Linq.Expressions": "4.0.11-beta-23516"
+      }
+    },
+    "aot": {
+      "System.Linq.Expressions": {
+        "runtime.aot.System.Linq.Expressions": "4.0.11-beta-23516"
+      }
+    }
+  }
+}
